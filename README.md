@@ -31,17 +31,21 @@ I have accomplished the following main tasks:
 
 2. Inside the above there is a folder named "ClusteringCrypto" which has all the solution files
 
-3. There is a Jupyter Notebook called [crypto_clustering.ipynb](Starter_Files/crypto_clustering.ipynb)
+3. There is a Jupyter Notebook called [crypto_clustering.ipynb](ClusteringCrypto/Starter_Files/crypto_clustering.ipynb)
 
-4. I have deployed the above model to AWS Sagemaker and notebook called [crypto_clustering_sm.ipynb](Starter_Files/crypto_clustering_sm.ipynb)
+4. I have deployed the above model to AWS Sagemaker and notebook called [crypto_clustering_sm.ipynb](ClusteringCrypto/Starter_Files/crypto_clustering_sm.ipynb)
 
 ### <b> Details on each tasks </b>
 
-#### <b> Data Preprocessing </b>
+#### Data-Preprocessing
 
 First step of any model building is to get and process the data before applying any modelling techniques. Below is a stepwise process to achieve that:
 
 1. Using the following `requests` library, retreived the necessary data from the following API endpoint from _CryptoCompare_ - `https://min-api.cryptocompare.com/data/all/coinlist`. Have used the 'Data' key from the json response, then transposed the DataFrame and called `crypto_df`.
+
+Here is the sample of the initial transposed crypto dataframe 
+
+![Initial Transposed Crypto Dataframe](ClusteringCrypto\Images\Transposed_Crypto_df.png)
 
 With the data loaded into a Pandas DataFrame, performed the following data preprocessing tasks.
 
@@ -67,7 +71,7 @@ With the data loaded into a Pandas DataFrame, performed the following data prepr
 
 12. Used the [`StandardScaler` from `sklearn`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html) to standardize all the data of the `X` DataFrame. This is important prior to using PCA and K-Means algorithms.
 
-#### <b> Reducing Data Dimensions Using PCA </b>
+#### Reducing Data Dimensions Using PCA
 
 1. Used the [`PCA` algorithm from `sklearn`](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html) to reduce the dimensions of the `X` DataFrame down to three principal components.
 
@@ -77,7 +81,7 @@ Sample of the DataFrame is
 
    ![pcs_df](ClusteringCrypto/Images/pcs_df.png)
 
-#### <b> Clustering Cryptocurrencies Using K-Means </b>
+#### Clustering Cryptocurrencies Using K-Means
 
 Post the variable reduction using the principal component analysis, I have used the [`KMeans` algorithm from `sklearn`](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) to cluster the cryptocurrencies using the PCA data.
 
@@ -93,7 +97,7 @@ Performed the following tasks:
 
     ![clustered_df](ClusteringCrypto/Images/clustered_df.png)
 
-#### <b> Visualizing Results </b>
+#### Visualizing Results
 
 In this section, you will create some data visualization to present the final results. Perform the following tasks:
 
@@ -107,7 +111,7 @@ In this section, you will create some data visualization to present the final re
 
     ![Scatter plot of TotalCoinsMined and TotalCoinSupply](ClusteringCrypto/Images/Scatter_plot.png)
 
-### <b> Optional Challenge </b>
+### Optional Challenge
 
 I have uploaded CryptoCluster Jupyter notebook to Amazon SageMaker and deployed it.
 
