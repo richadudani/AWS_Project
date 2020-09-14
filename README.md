@@ -45,7 +45,7 @@ First step of any model building is to get and process the data before applying 
 
 Here is the sample of the initial transposed crypto dataframe 
 
-![Initial Transposed Crypto Dataframe](ClusteringCrypto\Images\Transposed_Crypto_df.png)
+   ![Initial Transposed Crypto Dataframe](ClusteringCrypto\Images\Transposed_Crypto_df.png)
 
 With the data loaded into a Pandas DataFrame, performed the following data preprocessing tasks.
 
@@ -89,13 +89,13 @@ Performed the following tasks:
 
 1. Created an Elbow Curve to find the best value for `k` using the `pcs_df` DataFrame.
 
-    ![Elbow_Curve](ClusteringCrypto/Images/Elbow_Curve.png)
+   ![Elbow_Curve](ClusteringCrypto/Images/Elbow_Curve.png)
 
 2. From the Elbow Curve above, the best value for `k` is determined to be 4, ran the `Kmeans` algorithm to predict the `k` clusters for the cryptocurrencies data. Used the `pcs_df` to run the `KMeans` algorithm.
 
 3. Created a new DataFrame named `clustered_df`, that includes the following columns `"Algorithm", "ProofType", "TotalCoinsMined", "TotalCoinSupply", "PC 1", "PC 2", "PC 3", "CoinName", "Class"`. You should maintain the index of the `cluster` DataFrame as is shown bellow.
 
-    ![clustered_df](ClusteringCrypto/Images/clustered_df.png)
+   ![clustered_df](ClusteringCrypto/Images/clustered_df.png)
 
 #### Visualizing Results
 
@@ -105,11 +105,11 @@ In this section, you will create some data visualization to present the final re
 
 2. Used `hvplot.table` to create a data table with all the current tradable cryptocurrencies. The table should have the following columns: `"CoinName", "Algorithm", "ProofType", "TotalCoinSupply", "TotalCoinsMined", "Class"`
 
-    ![Current tradable cryptocurrencies](ClusteringCrypto/Images/Table_tradeble.png)
+   ![Current tradable cryptocurrencies](ClusteringCrypto/Images/Table_tradeble.png)
 
 3. Created a scatter plot using `hvplot.scatter`, to present the clustered data about cryptocurrencies having `x="TotalCoinsMined"` and `y="TotalCoinSupply"` to contrast the number of available coins versus the total number of mined coins. Use the `hover_cols=["CoinName"]` parameter to include the cryptocurrency name on each data point.
 
-    ![Scatter plot of TotalCoinsMined and TotalCoinSupply](ClusteringCrypto/Images/Scatter_plot.png)
+   ![Scatter plot of TotalCoinsMined and TotalCoinSupply](ClusteringCrypto/Images/Scatter_plot.png)
 
 ### Optional Challenge
 
