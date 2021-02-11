@@ -1,4 +1,4 @@
-# Unit 13 Homework Assignment - The Power of the Cloud and Unsupervised Learning
+# Unit 13 - The Power of the Cloud and Unsupervised Learning
 
 ## <b> Clustering Crypto </b>
 
@@ -45,7 +45,7 @@ First step of any model building is to get and process the data before applying 
 
 Here is the sample of the initial transposed crypto dataframe 
 
-   ![Initial Transposed Crypto Dataframe](ClusteringCrypto\Images\Transposed_Crypto_df.png)
+   ![Initial Transposed Crypto Dataframe](ClusteringCrypto\Images\Transposed_Crypto_df.PNG)
 
 With the data loaded into a Pandas DataFrame, performed the following data preprocessing tasks.
 
@@ -89,7 +89,7 @@ Performed the following tasks:
 
 1. Created an Elbow Curve to find the best value for `k` using the `pcs_df` DataFrame.
 
-   ![Elbow_Curve](ClusteringCrypto/Images/Elbow_Curve.png)
+   ![Elbow_Curve](ClusteringCrypto/Images/Elbow_Curve.PNG)
 
 2. From the Elbow Curve above, the best value for `k` is determined to be 4, ran the `Kmeans` algorithm to predict the `k` clusters for the cryptocurrencies data. Used the `pcs_df` to run the `KMeans` algorithm.
 
