@@ -1,4 +1,4 @@
-# Unit 13 - The Power of the Cloud and Unsupervised Learning
+# Amazon Web Services Project : The Power of the Cloud and Unsupervised Learning
 
 ## <b> Clustering Crypto </b>
 
