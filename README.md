@@ -105,11 +105,11 @@ In this section, you will create some data visualization to present the final re
 
 2. Used `hvplot.table` to create a data table with all the current tradable cryptocurrencies. The table should have the following columns: `"CoinName", "Algorithm", "ProofType", "TotalCoinSupply", "TotalCoinsMined", "Class"`
 
-   ![Current tradable cryptocurrencies](ClusteringCrypto/Images/Table_tradeble.png)
+   ![Current tradable cryptocurrencies](ClusteringCrypto/Images/Table_tradeble.PNG)
 
 3. Created a scatter plot using `hvplot.scatter`, to present the clustered data about cryptocurrencies having `x="TotalCoinsMined"` and `y="TotalCoinSupply"` to contrast the number of available coins versus the total number of mined coins. Use the `hover_cols=["CoinName"]` parameter to include the cryptocurrency name on each data point.
 
-   ![Scatter plot of TotalCoinsMined and TotalCoinSupply](ClusteringCrypto/Images/Scatter_plot.png)
+   ![Scatter plot of TotalCoinsMined and TotalCoinSupply](ClusteringCrypto/Images/Scatter_plot.PNG)
 
 ### Optional Challenge
 
