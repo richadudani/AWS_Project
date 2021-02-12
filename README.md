@@ -27,7 +27,7 @@ I have accomplished the following main tasks:
 
 ### <b> Files locations in Github </b>
 
-1. I have created a repository called `unit13-challenge` in the Github.
+1. I have created a repository called `AWS_Project` in the Github.
 
 2. Inside the above there is a folder named "ClusteringCrypto" which has all the solution files
 
@@ -45,7 +45,7 @@ First step of any model building is to get and process the data before applying 
 
 Here is the sample of the initial transposed crypto dataframe 
 
-   ![Initial Transposed Crypto Dataframe](ClusteringCrypto\Images\Transposed_Crypto_df.PNG)
+   ![Initial_Transposed_Crypto_Dataframe](ClusteringCrypto\Images\Transposed_Crypto_df.PNG)
 
 With the data loaded into a Pandas DataFrame, performed the following data preprocessing tasks.
 
